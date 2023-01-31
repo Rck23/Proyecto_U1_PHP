@@ -37,13 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarExample01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:8000/"><strong>Inicio</strong></a>
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="http://127.0.0.1:8000/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:8000/login">Inicio de sesión</a>
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="http://127.0.0.1:8000/login">Inicio de sesión</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:8000/formulario">Crear cuenta</a>
+                  <a class="nav-link text-white fw-bold" aria-current="page" href="http://127.0.0.1:8000/formulario">Crear cuenta</a>
                 </li>
 
               </ul>
@@ -63,11 +63,11 @@
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white">
-                <h1 class="mb-3">Esta es una</h1>
-                <h4 class="mb-3">página</h4>
-                <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                >Super chafa</a
-                >
+                <h1 class="mb-3" style="color:white">Esta es una</h1>
+                <h3 class="mb-3" style="color:white">página</h3>
+                <h4 class="mb-3" style="color:white">Super chafa</h4>
+          
+                
               </div>
             </div>
           </div>
