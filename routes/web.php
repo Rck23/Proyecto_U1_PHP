@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
 
 
 /*
@@ -32,3 +33,5 @@ Route::get('/inicio', [LoginController::class, 'index'])->name('login');
 Route::post('/inicio', [LoginController::class, 'store']);
 
 Route::get('/dashboard', [PostController::class, 'index'])->name('post.index');
+
+Route::post('/salir', [LogoutController::class, 'store'])->name('logout');

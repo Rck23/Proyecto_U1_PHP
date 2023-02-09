@@ -36,6 +36,8 @@
             ><i class="bi bi-list"></i></button>
             <div class="collapse navbar-collapse" id="navbarExample01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ 
+                @guest
                 <li class="nav-item active">
                   <a class="nav-link text-white fw-bold" aria-current="page" href="http://127.0.0.1:8000/">Inicio</a>
                 </li>
@@ -45,7 +47,21 @@
                 <li class="nav-item">
                   <a class="nav-link text-white fw-bold" aria-current="page" href="http://127.0.0.1:8000/formulario">Crear cuenta</a>
                 </li>
-
+                @endguest
+                
+                @auth
+                  <div class="d-flex align-items-center">
+                    <p>
+                      <h3 class="text-white">{{auth()->user()->username}}</h3>
+                    </p>
+                    <form action="{{route('logout')}}" method="POST">
+                      @csrf
+                      <button type="submit" class="btn btn-link px-3 me-2">
+                        Cerrar sesión
+                      </button>
+                    </form>
+                  </div>
+                @endauth
               </ul>
             </div>
           </div>
@@ -66,8 +82,6 @@
                 <h1 class="mb-3" style="color:white">Esta es una</h1>
                 <h3 class="mb-3" style="color:white">página</h3>
                 <h4 class="mb-3" style="color:white">Super chafa</h4>
-          
-                
               </div>
             </div>
           </div>
