@@ -61,6 +61,11 @@
                       </button>
                     </form>
                   </div>
+
+                  <a type="button" href="{{route('post.create')}}" class="btn btn-link m-2">
+                    <i class="fas fas-camera-retro"></i>
+                    Crear post
+                  </a>
                 @endauth
               </ul>
             </div>

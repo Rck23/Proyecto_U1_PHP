@@ -32,6 +32,7 @@ Route::post('/formulario', [RegisterController::class, 'store']);
 Route::get('/inicio', [LoginController::class, 'index'])->name('login');
 Route::post('/inicio', [LoginController::class, 'store']);
 
-Route::get('/dashboard', [PostController::class, 'index'])->name('post.index');
+Route::get('/{user:username}', [PostController::class, 'index'])->name('post.index');
+Route::get('/dashboard/create', [PostController::class, 'create'])->name('post.create');
 
 Route::post('/salir', [LogoutController::class, 'store'])->name('logout');
