@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="{{asset('css/estiloYo.css')}}">
 
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
 
     <script src="{{asset('js/mdb.min.js')}}"></script>
 

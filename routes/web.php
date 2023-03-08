@@ -35,4 +35,6 @@ Route::post('/inicio', [LoginController::class, 'store']);
 Route::get('/{user:username}', [PostController::class, 'index'])->name('post.index');
 Route::get('/dashboard/create', [PostController::class, 'create'])->name('post.create');
 
+Route::get('/imagenes', [ImagenController::class, 'store'])->name('imagenes');
+
 Route::post('/salir', [LogoutController::class, 'store'])->name('logout');
