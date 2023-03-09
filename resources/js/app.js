@@ -1,7 +1,7 @@
 import './bootstrap';
 
 import Dropzone from 'dropzone';
-Dropzone.autoDiscover =false; 
+Dropzone.autoDiscover = false; 
 
 const dropzone = new Dropzone('#dropzone', {
 
